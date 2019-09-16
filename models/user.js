@@ -11,4 +11,4 @@ const user = new mongoose.Schema({
 module.exports = mongoose.model('users', user);
 // end of first steps with mongoose.
 
-// ~/mongodb/bin/mongo
+// ~/mongodb/bin/mongo to run the mongo file. 
