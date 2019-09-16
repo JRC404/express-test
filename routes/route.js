@@ -27,6 +27,7 @@ router.post('/login', (req, res) => {
     let password = req.body.password;
     const user = new User({
         name: name,
+        email: email,
         password: password
     });
     user.save();
@@ -37,6 +38,23 @@ router.post('/login', (req, res) => {
 router.get('/signup', (req, res) => {
     res.render('signup');
 })
+
+router.post('/signup', (req, res) => {
+    let name = req.body.name;
+    let email = req.body.email;
+    let password = req.body.password;
+
+    const user = new User({
+        name: name,
+        email: email, 
+        password: password
+    });
+    user.save();
+    
+    res.render('./login', {name, title: 'express'});
+})
+
+
 
 // router.get('*', (req, res) => {
 //     res.redirect('/login')
