@@ -24,15 +24,12 @@ router.get('/login', (req, res) => {
 
 router.post('/login', (req, res) => {
     let name = req.body.name;
+    let email = req.body.email
     let password = req.body.password;
-    const user = new User({
-        name: name,
-        email: email,
-        password: password
-    });
-    user.save();
+    
+    
     // always have to send a response back, otherwise it will hang... Jacob, research...
-    res.render('login', {name, title: 'express'});
+    // res.render('login', {name, title: 'express'});
 }) 
 
 router.get('/signup', (req, res) => {
@@ -43,6 +40,26 @@ router.post('/signup', (req, res) => {
     let name = req.body.name;
     let email = req.body.email;
     let password = req.body.password;
+
+    User.findOne({email}, function(err, user) {
+        if(err) {
+            console.log('Error.')
+        }
+
+        if (user)
+        {
+            let err = new Error('A user with that email has already registered. ${email}')
+            err.status = 400;
+            console.log(err)
+            res.render('signup', {errorMessage: 'A user with that email has already registered.'})
+            // Research error of 'Cannot set headers after they are sent to the client.'
+            
+        }
+        else {
+            res.render('login', {name, title: 'express'});
+        }
+        // res.render('login', {name, title: 'express'});
+    })
 
     const user = new User({
         name: name,
