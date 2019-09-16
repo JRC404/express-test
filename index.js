@@ -1,5 +1,6 @@
 // either app.js or index.js - preferrence to call it index.js
 // config file for express
+// npm init -y
 // -y is yes, thanks Dean.
 
 // npm i express - because we are using express
@@ -14,7 +15,12 @@ const express = require('express');
 // initialise express by calling it like a function. Allowing us to use epxress. Remember to hover over express.
 const app = express();
 
-const router = require('./routes/route')
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/signup', {
+    useNewUrlParser: true
+});
+
+const router = require('./routes/route');
 
 // config - capital letters. 
 // either use the port enviornment OR if it's local, it's 3000.

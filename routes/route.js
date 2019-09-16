@@ -1,6 +1,7 @@
 // requiring Router module from express
 const {Router} = require('express');
 const router = Router();
+const User = require('../models/user');
 
 router.get('/login', (req, res) => {
     // let resource = '<h1>Hello, Dean.</h1>';
@@ -23,10 +24,19 @@ router.get('/login', (req, res) => {
 
 router.post('/login', (req, res) => {
     let name = req.body.name;
-
+    let password = req.body.password;
+    const user = new User({
+        name: name,
+        password: password
+    });
+    user.save();
     // always have to send a response back, otherwise it will hang... Jacob, research...
     res.render('login', {name, title: 'express'});
 }) 
+
+router.get('/signup', (req, res) => {
+    res.render('signup');
+})
 
 // router.get('*', (req, res) => {
 //     res.redirect('/login')
