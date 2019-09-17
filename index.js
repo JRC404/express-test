@@ -22,6 +22,7 @@ mongoose.connect('mongodb://localhost:27017/signup', {
 
 const router = require('./routes/route');
 
+
 // config - capital letters. 
 // either use the port enviornment OR if it's local, it's 3000.
 // two ways...
@@ -36,6 +37,10 @@ app.engine('.hbs', hbs({defaultLayout: 'layout', extname: '.hbs'}))
 
 // why do we have to set up .hbs?
 app.set('view engine', '.hbs');
+// hbs.registerPartials(__dirname + "/views/partials"); // <-- Place "hbs.registerPartials" in here !
+// hbs.registerPartial('./particals/nav', '{{navbar}}');
+// hbs.registerPartial('./views/myPartial', '{{nav}}');
+
 
 // multiple app.use
 app.use(express.static(path.join(__dirname, 'public')));

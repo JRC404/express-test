@@ -73,16 +73,13 @@ router.post('/signup', (req, res) => {
 })
 
 
-
-
-
 // router.get('*', (req, res) => {
 //     res.redirect('/login')
 // })
 
 router.get('/', (req, res) => {
     // the data we are sending over. With a title of express.
-    res.render('index', {title: 'Express'});
+    res.render('index', {title: 'Express', subtitle: 'Social Platform'});
 })
 
 
