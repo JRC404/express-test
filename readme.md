@@ -12,6 +12,10 @@ It is really easy to rest on what you already know and sit in a nice comfort zon
 
 I will be styling the site, but it isn't my priority. **For now**.
 
+### Templating
+
+With handlebars, templating is key. I will be looking into partials to enable this. The navigation bar is the first partial I will be creating.
+
 ### Credits
 
 **Dean Singleton** - Instrumental in the development of this project. 
