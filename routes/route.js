@@ -52,14 +52,15 @@ router.post('/signup', (req, res) => {
             err.status = 400;
             console.log(err)
             res.render('signup', {errorMessage: 'A user with that email has already registered.'})
-            // Research error of 'Cannot set headers after they are sent to the client.'
-            
+            return;
+            // Research error of 'Cannot set headers after they are sent to the client.' 
         }
-        else {
-            res.render('login', {name, title: 'express'});
-        }
+        // else {
+        //     res.render('login', {name, title: 'express'});
+        // }
         // res.render('login', {name, title: 'express'});
     })
+    
 
     const user = new User({
         name: name,
@@ -70,6 +71,8 @@ router.post('/signup', (req, res) => {
     
     res.render('./login', {name, title: 'express'});
 })
+
+
 
 
 
