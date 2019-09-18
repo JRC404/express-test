@@ -52,7 +52,8 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
 app.use('/', router);
 
-
+// session usage here
+// app.use(session({secret: 'ssshhh'}));
 
 
 // last thing in the file...

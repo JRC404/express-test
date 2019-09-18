@@ -102,6 +102,10 @@ router.get('/blog', (req, res) => {
 // })
 
 router.get('/', (req, res) => {
+    // let sessionVariable = req.session;
+    // //assigning session to sessionVariable
+    // sessionVariable.email;
+    // sessionVariable.username;
     // the data we are sending over. With a title of express.
     res.render('index', {title: 'Express', subtitle: 'Social Platform'});
 })
