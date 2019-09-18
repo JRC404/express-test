@@ -26,11 +26,17 @@ router.post('/login', (req, res) => {
     let name = req.body.name;
     let email = req.body.email
     let password = req.body.password;
+
+
     
     
     // always have to send a response back, otherwise it will hang... Jacob, research...
     // res.render('login', {name, title: 'express'});
 }) 
+
+router.get('/about', (req, res) => {
+    res.render('about', {title: "About the creator"})
+})
 
 router.get('/signup', (req, res) => {
     res.render('signup');
