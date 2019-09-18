@@ -10,6 +10,7 @@
 const hbs = require('express-handlebars');
 const path = require('path');
 const bodyParser = require('body-parser');
+const session = require('express-session');
 
 const express = require('express');
 // initialise express by calling it like a function. Allowing us to use epxress. Remember to hover over express.
