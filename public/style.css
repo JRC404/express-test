@@ -1,16 +1,16 @@
-body {
+  body {
     font-family: 'Gilroy';
     padding: 0;
 }
 
-ul {
+  ul {
     list-style-type: none;
     margin: 0px;
     padding: 0;
     overflow: hidden;
     border: 1px solid #e7e7e7;
     background-color: #581845;
-  }
+}
   
   li {
     float: left;
@@ -23,17 +23,17 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
     /* font-weight: bold; */
-  }
+}
   
   li a:hover:not(.active) {
     background-color: #FF6100; 
     color: #581845;
-  }
+}
   
   li a.active {
     color: white;
     background-color: orange;
-  }
+}
 
   .button {
     background-color: #FF6100; 
@@ -44,17 +44,60 @@ ul {
     padding: 1em ;
     font-size: 1em;
     cursor: pointer;
-  }
+}
 
   .button:hover {
     color: #FF6100; 
     background-color: #581845;
-  }
+}
 
   #input {
     border: none;
     padding: 1em;
     font-size: 1em;
+}
+
+  .left {
+    float: left;
+    width: 75%;
+    
+}
+
+  .left h2 {
+    color: #FF6100;
+}
+
+  .post {
+    padding: 0;
+    margin-top: 1em;
+
+}
+
+  .presentation {
+    color: #FF6100
   }
 
+  .profileCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 17em;
+    /* margin: auto; */
+    text-align: center;
+  }
   
+  #profileButton {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: .3em;
+    color: white;
+    background-color: #581845;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+  }
+
+  #profileButton a {
+    text-decoration: none;
+    color: white;
+  }
