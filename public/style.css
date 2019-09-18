@@ -50,3 +50,11 @@ ul {
     color: #F5B32F; 
     background-color: #274E9B;
   }
+
+  #input {
+    border: none;
+    padding: 1em;
+    font-size: 1em;
+  }
+
+  
