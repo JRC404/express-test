@@ -75,7 +75,7 @@ router.post('/signup', (req, res) => {
     });
     user.save();
     
-    res.render('./login', {name, title: 'express'});
+    // res.render('./login', {name, title: 'express'});
 })
 
 
