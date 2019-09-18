@@ -34,13 +34,22 @@ router.post('/login', (req, res) => {
     // res.render('login', {name, title: 'express'});
 }) 
 
+// 
+//  About page
+//
+
 router.get('/about', (req, res) => {
     res.render('about', {title: "About the creator"})
 })
 
+// 
+//  Signup page 
+//
+
 router.get('/signup', (req, res) => {
     res.render('signup');
 })
+
 
 router.post('/signup', (req, res) => {
     let name = req.body.name;
@@ -64,7 +73,9 @@ router.post('/signup', (req, res) => {
         // else {
         //     res.render('login', {name, title: 'express'});
         // }
-        // res.render('login', {name, title: 'express'});
+        res.render('login', {name, title: 'express'});
+
+        
     })
     
 
@@ -78,6 +89,13 @@ router.post('/signup', (req, res) => {
     // res.render('./login', {name, title: 'express'});
 })
 
+// 
+//  Blog page
+// 
+
+router.get('/blog', (req, res) => {
+    res.render('blog', {title: 'Blog'});
+})
 
 // router.get('*', (req, res) => {
 //     res.redirect('/login')
