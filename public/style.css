@@ -1,14 +1,15 @@
 body {
     font-family: 'Gilroy';
+    padding: 0;
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0px;
     padding: 0;
     overflow: hidden;
     border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
+    background-color: #274E9B;
   }
   
   li {
@@ -17,17 +18,35 @@ ul {
   
   li a {
     display: block;
-    color: #666;
+    color: #F5B32F;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    /* font-weight: bold; */
   }
   
   li a:hover:not(.active) {
-    background-color: #ddd;
+    background-color: #F5B32F; 
+    color: #274E9B;
   }
   
   li a.active {
     color: white;
     background-color: orange;
+  }
+
+  .button {
+    background-color: #F5B32F; 
+    color: #274E9B;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1em ;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    color: #F5B32F; 
+    background-color: #274E9B;
   }
