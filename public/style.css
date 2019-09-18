@@ -9,7 +9,7 @@ ul {
     padding: 0;
     overflow: hidden;
     border: 1px solid #e7e7e7;
-    background-color: #274E9B;
+    background-color: #581845;
   }
   
   li {
@@ -18,7 +18,7 @@ ul {
   
   li a {
     display: block;
-    color: #F5B32F;
+    color: #FF6100;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -26,8 +26,8 @@ ul {
   }
   
   li a:hover:not(.active) {
-    background-color: #F5B32F; 
-    color: #274E9B;
+    background-color: #FF6100; 
+    color: #581845;
   }
   
   li a.active {
@@ -36,8 +36,8 @@ ul {
   }
 
   .button {
-    background-color: #F5B32F; 
-    color: #274E9B;
+    background-color: #FF6100; 
+    color: #581845;
     border: none;
     text-decoration: none;
     font-weight: bold;
@@ -47,8 +47,8 @@ ul {
   }
 
   .button:hover {
-    color: #F5B32F; 
-    background-color: #274E9B;
+    color: #FF6100; 
+    background-color: #581845;
   }
 
   #input {
