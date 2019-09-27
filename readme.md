@@ -1,6 +1,4 @@
-# Express Project
-![Dean wanted me to teach him Node, to do so, he had to teach me.](./img/nodejs.png "Logo Title Text 1")
-
+# User Authentication Project
 
 The aim for this project is to have a social profile for a user that the **user** can edit. 
 
@@ -29,3 +27,7 @@ The first partial has been created: Nav.hbs - this allows me to bring in the nav
 ### Credits
 
 **Dean Singleton** - Instrumental in the development of this project. 
+
+![Dean wanted me to teach him Node, to do so, he had to teach me.](./img/nodejs.png "Logo Title Text 1")
+![Dean wanted me to teach him Express, to do so, he had to teach me.](./img/express.png "Logo Title Text 1")
+![Dean wanted me to teach him Handlebars, to do so, he had to teach me.](./img/handlebars-js.png "Logo Title Text 1")
