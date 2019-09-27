@@ -12,6 +12,10 @@ It is really easy to rest on what you already know and sit in a nice comfort zon
 
 I will be styling the site, but it isn't my priority. **For now**.
 
+### Functionality
+- [x] Create checklist
+- [ ] Populate checklist
+
 ### Templating
 
 With handlebars, templating is key. 
