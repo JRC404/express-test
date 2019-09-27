@@ -1,4 +1,6 @@
 # Express Project
+![Dean wanted me to teach him Node, to do so, he had to teach me.](./img/nodejs.png "Logo Title Text 1")
+
 
 The aim for this project is to have a social profile for a user that the **user** can edit. 
 
