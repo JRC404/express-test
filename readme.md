@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="200" height="130" src="./img/nodejs.png" alt="Dean wanted me to teach him Node, to do so, he had to teach me.">
+  <img width="150" height="100" src="./img/nodejs.png" alt="Dean wanted me to teach him Node, to do so, he had to teach me.">
 </p>
 
 # User Authentication Project
